@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    font-size: 1.2em;
+}
+
+.li {
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
