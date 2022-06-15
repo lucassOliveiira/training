@@ -2,6 +2,7 @@
 
 .divona {
     display: flex;
+    position: relative;
 }
 
 .lista {
@@ -9,6 +10,10 @@
     flex-flow: column wrap;    
     background-color: rgb(71, 157, 233);
     border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    right: 10px;
  }
 
  /* position-absolute alert alert-success */
