@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.divona {
+    display: flex;
+}
+
+.lista {
+    display: flex;
+    flex-flow: column wrap;    
+    background-color: rgb(71, 157, 233);
+    border-radius: 15px;
+ }
+
+ /* position-absolute alert alert-success */
