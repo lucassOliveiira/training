@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Candidatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <h1>Registro de Candidatos</h1>
+    <form>
+        <div class="container borda">
+            <!-- Nome do candidato -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="nome">Nome:</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" name="nome" id="nome" required autofocus>
+                </div>
+            </div>
+            <!-- Data de Nascimento -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="data">Data de nascimento:</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="date" name="data" id="data" required>
+                </div>
+            </div>
+            <!-- Sexo -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="sexo">Sexo:</label>
+                <div class="col-sm-10">
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <input type="radio" name="sexo" id="sexo">Masculino<br />
+                        <input type="radio" name="sexo" id="sexo">Feminino
+                    </fieldset>
+                </div>
+            </div>
+            <!-- Telefone -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="telefone">Telefone:</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="number" name="telefone" id="telefone" required>
+                </div>
+            </div>
+            <!-- E-mail -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="email">E-mail:</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="email" name="email" id="email" required>
+                </div>
+            </div>
+            <!-- Vaga Desejada -->
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="">Tipo de vaga:</label>
+                <div class="col-sm-5">
+                    <input type="radio" id="desenv" name="tipo" value="desenv" checked>Desenvolvimento
+                    <input type="radio" id="negocio" name="tipo" value="negocio">Negócios
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="vaga">Vaga Desejada:</label>
+                <div class="col-sm-5">
+                    <select class="form-control" name="vaga" id="vaga" required>
+                    </select>
+                </div>
+            </div>
+            <!-- Botão -->
+            <div class="form-group row">
+                <div class="col-sm-5 col-sm-offset-2">
+                    <input class="btn btn-primary" type="submit" value="Incluir" id="incluirButton">
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../scripts/validacaoRegistro.js"></script>
+    <script src="../scripts/listaVagas.js"></script>
+    <script src="../scripts/cadastro.js"></script>
+</body>
+
+</html>

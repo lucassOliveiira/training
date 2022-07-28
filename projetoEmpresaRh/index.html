@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Institucional - ABC Tecnologia</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/destaque.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menuTopo">
+                <li><a href="#">A Empresa</a></li>
+                <li><a href="paginas/produtos.html">Produtos</a></li>
+                <li><a href="paginas/localizacao.html">Localização</a></li>
+                <li><a href="paginas/registros.html">Trabalhe Conosco</a></li>
+                <li class="icon"><a href="javascript:void(0)" onclick="mostrarMenu()"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro"></section>
+    <div class="container">
+        <section>
+            <div>
+                <a class="registro" href="paginas/registros.html">Candidate-se<br />
+                <span class="free">&#183; Hoje &#183;</span>
+                </a>
+            </div>
+            <article>
+                <h2>Conheça-nos um pouco</h2>
+                <p>Desde sua fundação a ABC Tecnologia é uma empresa com foco na elaboraçã soluções visando agilizar os proce relativos às tarefas de seus clientes.<br/> A agilidade, redução de cust satisfação dos nossos clientes é nossa maior meta.</p>
+            </article>
+            <p>Conheça nossos <a href="#">produtos e serviços</a> e descubra o que podemos fazer por você</p>
+        </section>
+        <aside>
+            <h2>Depoimento dos nossos clientes</h2>
+            <p>Estava buscando uma solução para minha clínica e a ABC nos desenvolveu um sistema  medida, cujos resultados superaram nos expectativas.</p>
+        </aside>
+    </div>
+    <footer class="footer">
+    <p>Avenida Paulista, 1009 - Bela Vista <br />São Paulo - CEP 01311-100</p>
+    <p>Copyright 2020 - Todos os direitos reservados<</p>
+    </footer>
+    <script type="text/javascript">
+        function mostrarMenu() {
+            let elemento = document.getElementById('menuTopo')
+            if(elemento.className === 'menu') {
+                elemento.className += 'responsive'
+            } else {
+                elemento.className = 'menu'
+            }
+        }
+    </script>
+</body>
+</html>
