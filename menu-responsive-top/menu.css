@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+:root {
+    --color-blue: #01d5c9;
+    --color-purple: #453074;
+    --black-0: rgba(0, 0, 0, 0.9)
+    --black-1: rgba(0, 0, 0, 0.8);
+    --black-2: rgba(0, 0, 0, 0.7);
+    --black-3: rgba(0, 0, 0, 0.6);
+    --black-4: rgba(0, 0, 0, 0.5);
+    --black-5: rgba(0, 0, 0, 0.4);
+    --black-6: rgba(0, 0, 0, 0.3);
+    --black-7: rgba(0, 0, 0, 0.2);
+    --black-8: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;              
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(200, 200, 200);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9bb4c5;
+}
+
+/* start nav */
+.nav {
+    background-color: #FFF;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.47);
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    transition: all .4s ease;
+}
+
+.nav h2 a {
+    text-decoration: none;
+    color: var(--black-0);
+}
+
+.max {
+    height: 15%;
+    background-color: #fff;
+}
+
+.min {
+    height: 13%;
+    background-color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-list li {
+    position: relative;
+    display: flex;
+    padding: 0 20px;
+    transition: 0.5s all ease;
+}
+
+.nav-list li a{
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #313131;
+}
+
+.nav-list li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--color-blue);
+    bottom: -11px;
+    left: 12%;
+    transition: all 0.5s ease;
+}
+
+.nav-list li:not(.nav-list li:last-child):hover::after {
+    width: 76%;
+}
+
+
+.nav-button {
+    position: absolute;
+    background-color: var(--color-purple);
+    color: #fff !important;
+    bottom: -20px;
+    letter-spacing: 1px;
+    padding: 20px 25px;
+    font-size: 14px;
+    box-shadow: 4px 4px rgb(239, 74, 148);
+}
+
+.nav-button:hover {
+    background-color: var(--color-blue);
+    transition: .5s all ease;
+}
+
+/* MENU HAMBURGUER */
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #248ece;
+    height: 3px;
+    border-radius: 2px;
+    width: 28px;
+    margin: 5px auto;
+    transition: all .4s ease-in-out;
+}   
+
+@media screen and (max-width: 890px){
+    .menu {
+        display: block;
+        padding: 0 30px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav h2 a {
+        padding: 0 30px;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: -1000%;
+        transition: .5s all ease-out;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .nav-list li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 16px;
+    }
+    .nav-list li:hover {
+        background-color: var(--color-purple);
+    }
+    .nav-list li a {
+        color: white;
+    }
+    .nav-button {
+        color: #fff ;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        position: relative;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .nav-button:hover {
+        background-color: transparent;  
+    }
+    .nav-list.active {
+        top: 100%;
+        height: 100vh;
+    }
+    .nav-list li::after {
+        content: none;
+    }
+    .menu.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(404deg);
+    }
+    .menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-404deg);
+    }
+}
+
+.banner .banner-img {
+    width: 100%;
+    height: 612px;
+    background-color: var(--black-8);
+}
