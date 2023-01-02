@@ -1,0 +1,42 @@
+.bola1 {
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 50%;
+
+    background-color: $primaryColor;
+    transition: all .4s ease-in-out;
+
+    .link {
+        color: $secondaryColor;
+        text-decoration: none;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: $primaryColor;
+            text-decoration: underline;
+        }
+    }
+
+    &:hover {
+        background-color: $secondaryColor;
+    }
+}
+
+.bola2 {
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 50%;
+
+    background-color: $secondaryColor;
+}
+
+.bola3 {
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 50%;
+
+    background-color: $neutralColor;
+}

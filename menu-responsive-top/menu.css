@@ -198,7 +198,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 .banner .banner-img {
+    position: relative;
     width: 100%;
-    height: 612px;
+    height: 511px;
     background-color: var(--black-8);
+}
+
+.bg-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bg-waves svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 101px;
+}
+
+.bg-waves .shape-fill {
+    fill: var(--black-8);
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="container">
+            <div class="label">List One</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias, natus atque, itaque iste saepe explicabo veniam nisi expedita cum commodi qui sapiente amet in, voluptatum eum! Quibusdam, rerum corporis.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="label">List Two</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias, natus atque, itaque iste saepe explicabo veniam nisi expedita cum commodi qui sapiente amet in, voluptatum eum! Quibusdam, rerum corporis.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="label">List Three</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias, natus atque, itaque iste saepe explicabo veniam nisi expedita cum commodi qui sapiente amet in, voluptatum eum! Quibusdam, rerum corporis.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem molestias, natus atque, itaque iste saepe explicabo veniam nisi expedita cum commodi qui sapiente amet in, voluptatum eum! Quibusdam, rerum corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem illo dolores, ex ab officiis impedit doloribus expedita quod. Non impedit recusandae quos minus soluta a voluptas possimus voluptate ullam!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordion = document.getElementsByClassName('container')
+
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
